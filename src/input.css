@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section {
+  @apply py-20;
+}
+
+.section__title {
+  @apply mb-4;
+}
+
+/*=============== HOME ===============*/
+.home__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 83%;
+}
+
+.home__container {
+  position: relative;
+  height: calc(100vh - 3rem);
+  align-content: center;
+  row-gap: 3rem;
+}
+
+.home__data-subtitle,
+.home__data-title,
+.home__social-link,
+.home__info {
+  @apply text-white;
+}
+
+.home__data-subtitle {
+  @apply block font-semibold mb-3 text-3xl;
+}
+
+.home__data-title {
+  @apply text-base font-medium mb-10 mt-5;
+}
+
+.home__social {
+  @apply flex flex-col gap-y-6;
+}
+
+.home__social-link {
+  @apply text-2xl w-max;
+}
+
+.home__info {
+  @apply bg-slate-900 flex px-4 py-6 items-center gap-x-2 absolute right-0 bottom-4 w-[228px];
+}
+
+.home__info-title {
+  @apply block text-xl font-semibold mb-3;
+}
+
+.home__info-button {
+  @apply text-xl;
+}
+
+.home__info-overlay {
+  @apply overflow-hidden;
+}
+
+.home__info-img {
+  @apply w-[145px] transition-opacity;
+}
+
+.home__info-img:hover {
+  @apply transition-transform scale-110;
+}
+
+/*=============== BUTTONS ===============*/
+.button {
+  @apply inline-block bg-slate-900 text-white px-8 py-4 font-semibold transition duration-300;
+}
+
+.button:hover {
+  @apply bg-slate-800;
+}
+
+.button--flex {
+  @apply flex items-center gap-x-1;
+}
+
+.button--link {
+  @apply bg-none p-0;
+}
+
+.button--link:hover {
+  @apply bg-none;
+}
+
+/*=============== ABOUT ===============*/
+.about__data {
+  @apply text-center;
+}
+
+.about__container {
+  @apply gap-y-10;
+}
+
+.about__description {
+  @apply mb-4;
+}
+
+.about__img {
+  @apply flex gap-x-4 items-center justify-center;
+}
+
+.about__img-overlay {
+  @apply overflow-hidden;
+}
+
+.about__img-one {
+  width: 130px;
+}
+
+.about__img-two {
+  @apply w-60;
+}
+
+.about__img-one,
+.about__img-two {
+  @apply transition-transform duration-700;
+}
+
+.about__img-one:hover,
+.about__img-two:hover {
+  @apply scale-150;
+}
+
+/*=============== DISCOVER ===============*/
+.discover__card {
+  position: relative;
+  width: 200px;
+  overflow: var(--img-hidden);
+}
+
+.discover__data {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+.discover__title,
+.discover__description {
+  color: var(--white-color);
+}
+
+.discover__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.discover__description {
+  display: block;
+  font-size: var(--smaller-font-size);
+}
+
+.discover__img {
+  transition: var(--img-transition);
+}
+
+.discover__img:hover {
+  transform: var(--img-scale);
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
